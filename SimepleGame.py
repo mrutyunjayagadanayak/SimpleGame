@@ -19,9 +19,6 @@ class MainWindow(QtWidgets.QMainWindow):
         self.ui.computeSelection.setText("")
         self.ui.submitButton.clicked.connect(self.submitClicked)
         self.ui.actionQuit.triggered.connect(quit)
-
-    def advanceSlider(self):
-        self.ui.progressBar.setValue(self.ui.progressBar.value() + 1)
     
     def submitClicked(self):
         userInput = self.ui.userSelection.currentText().lower()
